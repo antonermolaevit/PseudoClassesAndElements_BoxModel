@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        article {
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 70px;
+            margin-bottom: 35px;
+        }
+
+
+        h1 {
+            margin-bottom: 35px;
+            font-size: 38px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 24px;
+            font-size: 18px;
+        }
+
+        article p::before {
+            background-image: url("img/rome_head.png");
+            background-size: 25px 25px;
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            content: "";
+        }
+
+        article p:nth-child(2)::first-line {
+            font-weight: 900;
+            background-color: rgb(255, 222, 122);
+        }
+
+        article p:last-child {
+            font-style: italic;
+        }
+
+        article p:nth-child(3):hover {
+            background-color: rgb(226, 237, 228);
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            width: 200px;
+            height: 30px;
+            font-size: 16px;
+            font-weight: bolder;
+            background-color: rgb(224, 217, 201);        
+        }
+
+        button:active {
+            background-color: rgb(15, 174, 84);
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <h1>Lorem Ipsum</h1>
+        <p>I. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia dolorum animi dolor, tempora id sit laboriosam porro aliquid placeat! Molestias rem ratione minima necessitatibus itaque nobis ducimus tempora vero quis.</p>
+        <p>II. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia dolorum animi dolor, tempora id sit laboriosam porro aliquid placeat! Molestias rem ratione minima necessitatibus itaque nobis ducimus tempora vero quis.</p>
+        <p>III. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia dolorum animi dolor, tempora id sit laboriosam porro aliquid placeat! Molestias rem ratione minima necessitatibus itaque nobis ducimus tempora vero quis.</p>
+        <p>IV. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia dolorum animi dolor, tempora id sit laboriosam porro aliquid placeat! Molestias rem ratione minima necessitatibus itaque nobis ducimus tempora vero quis.</p>
+        <p>V. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia dolorum animi dolor, tempora id sit laboriosam porro aliquid placeat! Molestias rem ratione minima necessitatibus itaque nobis ducimus tempora vero quis.</p>
+    </article>
+    <div>
+        <button>Push the button</button>
+    </div>
+</body>
+
+</html>
